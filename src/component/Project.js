@@ -1,12 +1,13 @@
 import React from 'react'
-import { data } from '../asset/data.js'
+import front from '../asset/front-data.js'
+import back from '../asset/back-data.js'
+import full from '../asset/full-data.js'
 import { Nav, Container, Row, Col, Tab } from 'react-bootstrap'
 import { ProjectCard } from './ProjectCard'
-import colorSharp2 from '../asset/img/color-sharp2.png'
 
 const Project = () => {
   return (
-    <section className='project' id='project'>
+    <section className='project ' id='project'>
       <Container>
         <Row>
           <Col size={12}>
@@ -36,33 +37,30 @@ const Project = () => {
               <Tab.Content id='slideInUp'>
                 <Tab.Pane eventKey='first'>
                   <Row>
-                    {data.map((project, index) => {
+                    {front.map((project, index) => {
                       return <ProjectCard key={index} {...project} />
                     })}
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey='second'>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque quam, quod neque provident velit, rem explicabo
-                    excepturi id illo molestiae blanditiis, eligendi dicta
-                    officiis asperiores delectus quasi inventore debitis quo.
-                  </p>
+                  <Row>
+                    {back.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />
+                    })}
+                  </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey='third'>
-                  <p>
-                    Lorem ipsum dlor sit amet consectetur adipisicing elit.
-                    Cumque quam, quod neque provident velit, rem explicabo
-                    excepturi id illo molestiae blanditiis, eligendi dicta
-                    officiis asperiores delectus quasi inventore debitis quo.
-                  </p>
+                  <Row>
+                    {full.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />
+                    })}
+                  </Row>
                 </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
         </Row>
       </Container>
-      <img className='background-image-right' src={colorSharp2}></img>
     </section>
   )
 }
