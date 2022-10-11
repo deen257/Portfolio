@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar, Container, Nav } from 'react-bootstrap'
 import logo from '../asset/img/logo.svg'
-import navIcon1 from '../asset/img/nav-icon1.svg'
-import navIcon2 from '../asset/img/nav-icon2.svg'
-import navIcon3 from '../asset/img/nav-icon3.svg'
+import linkedin from '../asset/img/nav-icon1.svg'
+import twitter from '../asset/img/twitter.svg'
+import git from '../asset/img/git.svg'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   const [activelink, setActivelink] = useState('home')
   const [scroll, setScroll] = useState(false)
+  const mailto = 'mailto:folorunshoayomide46@gmail.com'
 
   const onUpdateActiveLink = (value) => {
     setActivelink(value)
@@ -29,15 +31,15 @@ const NavBar = () => {
   return (
     <Navbar expand='md' className={scroll ? 'scroll' : ''}>
       <Container>
-        <Navbar.Brand href='/'>
-            <img src={logo} alt='logo' />
+        <Navbar.Brand href='#home'>
+          <img src={logo} alt='logo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav'>
           <span className='navbar-toggler-icon'></span>
         </Navbar.Toggle>
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ms-auto'>
-            <Nav.Link 
+            <Nav.Link
               href='#home'
               className={
                 activelink === 'home' ? 'active navbar-link' : 'navbar'
@@ -53,14 +55,14 @@ const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink('skills')}
             >
-              Link
+              Skills
             </Nav.Link>
             <Nav.Link
-              href='#projects'
+              href='#project'
               className={
                 activelink === 'projects' ? 'active navbar-link' : 'navbar-link'
               }
-              onClick={() => onUpdateActiveLink('projects')}
+              onClick={() => onUpdateActiveLink('project')}
             >
               Projects
             </Nav.Link>
@@ -74,19 +76,29 @@ const NavBar = () => {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-              <a href='https://www.twitter.com'>
-                <img src={navIcon1} alt='' />
+              <a href='https://www.linkedin.com/in/folorunsho-ayomide-2369441b5/'>
+                <img src={linkedin} alt='' />
               </a>
-              <a href='https://www.twitter.com'>
-                <img src={navIcon2} alt='' />
+              <a href='https://github.com/deen257'>
+                <img src={git} alt='' />
               </a>
-              <a href='https://www.twitter.com'>
-                <img src={navIcon3} alt='' />
+              <a href='https://twitter.com/Ayomid_'>
+                <img src={twitter} alt='' />
               </a>
             </div>
-            <button className='vvd' onClick={() => console.log('connect')}>
-              <span>Let's Connect</span>
-            </button>
+            <Link
+              to='#'
+              onClick={(e) => {
+                window.location.href = mailto
+                e.preventDefault()
+              }}
+            >
+              <button
+                className='vvd'
+              >
+                <span>Let's Connect</span>
+              </button>
+            </Link>
           </span>
         </Navbar.Collapse>
       </Container>
