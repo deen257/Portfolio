@@ -1,70 +1,87 @@
-import meter1 from '../asset/img/meter1.svg'
-import meter2 from '../asset/img/meter2.svg'
-import meter3 from '../asset/img/meter3.svg'
-import Carousel from 'react-multi-carousel'
-import 'react-multi-carousel/lib/styles.css'
-import colorSharp from '../asset/img/color-sharp.png'
+import node from '../asset/img/node.svg'
+import gitone from '../asset/img/git1.svg'
+import js from '../asset/img/javascript.svg'
+import tailwind from '../asset/img/tailwind.svg'
+import react from '../asset/img/react.svg'
+import psql from '../asset/img/psql.svg'
 
 const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  }
-
   return (
-    <section className='skill' id='skills'>
-      <div className='container'>
+    <section className='skill ' id='skills'>
+      <div className='container '>
         <div className='row'>
           <div className='col-12'>
             <div className='skill-bx wow zoomIn'>
-              <h2>Skills</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry's standard
-                dummy text.
-              </p>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className='owl-carousel owl-theme skill-slider'
-              >
-                <div className='item'>
-                  <img src={meter1} alt='Image' />
-                  <h5>Web Development</h5>
-                </div>
-                <div className='item'>
-                  <img src={meter2} alt='Image' />
-                  <h5>Brand Identity</h5>
-                </div>
-                <div className='item'>
-                  <img src={meter3} alt='Image' />
-                  <h5>Logo Design</h5>
-                </div>
-                <div className='item'>
-                  <img src={meter1} alt='Image' />
-                  <h5>Web Development</h5>
-                </div>
-              </Carousel>
+              <section className='container'>
+                <h1>Skills</h1>
+                <p className='middle'>
+                  I've worked with many different technologies to develop and
+                  maintain my projects.
+                </p>
+                <p className='middle'>These are my main technologies.</p>
+                <article className='skills-container'>
+                  <div className='skills'>
+                    <img src={node} alt='' />
+                    <h1>
+                      NodeJS
+                      <p className='text'>
+                        Node and Express are my preferred method of building
+                        backends.
+                      </p>
+                    </h1>
+                  </div>
+                  <div className='skills'>
+                    <img src={react} alt='' />
+                    <h1>
+                      React
+                      <p className='text'>
+                        I build responsive, fluid UIs using React.
+                      </p>
+                    </h1>
+                  </div>
+                  <div className='skills'>
+                    <img src={psql} alt='' />
+                    <h1>
+                      PostgresSQL
+                      <p className='text'>
+                        I typically use relational databases in my projects.
+                      </p>
+                    </h1>
+                  </div>
+                  <div className='skills'>
+                    <img src={tailwind} alt='' />
+                    <h1>
+                      Tailwind
+                      <p className='text'>
+                        This is my preferred css libary for front-end work
+                      </p>
+                    </h1>
+                  </div>
+                  <div className='skills'>
+                    <img src={js} alt='' />
+                    <h1>
+                      Javascript
+                      <p className='text'>
+                        Javascript provides extensive libaries for various
+                        functionalities that i need.
+                      </p>
+                    </h1>
+                  </div>
+                  <div className='skills'>
+                    <img src={gitone} alt='' />
+                    <h1>
+                      Git
+                      <p className='text'>
+                        Git is a tool I rely on everyday to manage my workflow.
+                      </p>
+                    </h1>
+                  </div>
+                </article>
+              </section>
             </div>
           </div>
         </div>
       </div>
-      <img className='background-image-left' src={colorSharp} alt='Image' />
     </section>
   )
 }
