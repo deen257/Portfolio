@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar, Container, Nav } from 'react-bootstrap'
 import logo from '../asset/img/logo.svg'
-import linkedin from '../asset/img/nav-icon1.svg'
+import linkedin from '../asset/img/linkedin.svg'
 import twitter from '../asset/img/twitter.svg'
 import git from '../asset/img/git.svg'
 import { Link } from 'react-router-dom'
@@ -93,9 +93,7 @@ const NavBar = () => {
                 e.preventDefault()
               }}
             >
-              <button
-                className='vvd'
-              >
+              <button className='vvd'>
                 <span>Let's Connect</span>
               </button>
             </Link>
