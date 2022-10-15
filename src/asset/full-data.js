@@ -1,49 +1,18 @@
-import projImg1 from '../asset/img/project-img1.png'
-import projImg2 from '../asset/img/project-img2.png'
-import projImg3 from '../asset/img/project-img3.png'
+import fyyur from '../asset/img/fyyur.svg'
+import trivia from '../asset/img/trivia.svg'
 
- const data = [
+const data = [
   {
-    title: 'Food App',
-    description: 'Front-End',
-    imgUrl: projImg1,
-    live: 'https://github.com/deen257',
-    source: 'https://github.com/deen257',
+    title: 'fyyur app',
+    description: 'Full stack app',
+    imgUrl: fyyur,
+    source: 'https://github.com/deen257/fyyur-app',
   },
   {
-    title: 'Business Startup',
-    description: 'Design & Development',
-    imgUrl: projImg2,
-    live: 'https://github.com/deen257',
-    source: 'https://github.com/deen257',
-  },
-  {
-    title: 'Business Startup',
-    description: 'Design & Development',
-    imgUrl: projImg3,
-    live: 'https://github.com/deen257',
-    source: 'https://github.com/deen257',
-  },
-  {
-    title: 'Business Startup',
-    description: 'Design & Development',
-    imgUrl: projImg1,
-    live: 'https://github.com/deen257',
-    source: 'https://github.com/deen257',
-  },
-  {
-    title: 'Business Startup',
-    description: 'Design & Development',
-    imgUrl: projImg2,
-    live: 'https://github.com/deen257',
-    source: 'https://github.com/deen257',
-  },
-  {
-    title: 'Business Startup',
-    description: 'Design & Development',
-    imgUrl: projImg3,
-    live: 'https://github.com/deen257',
-    source: 'https://github.com/deen257',
+    title: 'Triva app',
+    description: 'Development',
+    imgUrl: trivia,
+    source: 'https://github.com/deen257/Trivia-api',
   },
 ]
 

@@ -31,25 +31,25 @@ const Skills = () => {
                     </h1>
                   </div>
                   <div className='skills'>
-                    <img src={react} alt='' />
+                    <img src={react} alt='react' />
                     <h1>
                       React
                       <p className='text'>
-                        I build responsive, fluid UIs using React.
+                        I use react to build responsive and fluid UIs.
                       </p>
                     </h1>
                   </div>
                   <div className='skills'>
-                    <img src={psql} alt='' />
+                    <img src={psql} alt='psql' />
                     <h1>
                       PostgresSQL
                       <p className='text'>
-                        I typically use relational databases in my projects.
+                        I use relational databases in my projects.
                       </p>
                     </h1>
                   </div>
                   <div className='skills'>
-                    <img src={tailwind} alt='' />
+                    <img src={tailwind} alt='tailwind' />
                     <h1>
                       Tailwind
                       <p className='text'>
@@ -58,7 +58,7 @@ const Skills = () => {
                     </h1>
                   </div>
                   <div className='skills'>
-                    <img src={js} alt='' />
+                    <img src={js} alt='javascipt' />
                     <h1>
                       Javascript
                       <p className='text'>
@@ -68,7 +68,7 @@ const Skills = () => {
                     </h1>
                   </div>
                   <div className='skills'>
-                    <img src={gitone} alt='' />
+                    <img src={gitone} alt='git' />
                     <h1>
                       Git
                       <p className='text'>

@@ -11,7 +11,7 @@ export const ProjectCard = ({title, description, imgUrl, live, source}) => {
             <h4>{title}</h4>
             <span>{description}</span>
             <div>
-              <a  href={live} className='btn'>Live </a>
+              {live ? <a  href={live} className='btn'>Live </a> : null}
               <a href={source} className='btn'>Source code</a>
             </div>
           </div>

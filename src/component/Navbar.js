@@ -5,11 +5,16 @@ import linkedin from '../asset/img/linkedin.svg'
 import twitter from '../asset/img/twitter.svg'
 import git from '../asset/img/git.svg'
 import { Link } from 'react-router-dom'
+import pdf from '../asset/files/FOLORUNSHO AYOMIDE RESUME .pdf'
 
 const NavBar = () => {
   const [activelink, setActivelink] = useState('home')
   const [scroll, setScroll] = useState(false)
   const mailto = 'mailto:folorunshoayomide46@gmail.com'
+
+  const onResumeClick = () => {
+    window.open(pdf)
+  }
 
   const onUpdateActiveLink = (value) => {
     setActivelink(value)
@@ -66,13 +71,16 @@ const NavBar = () => {
             >
               Projects
             </Nav.Link>
-            <Nav.Link
-              href='#resume'
-              className='navbar-link'
-              onClick={() => onUpdateActiveLink('resume')}
+            <Link
+              to='/resume'
+              onClick={() => {
+                onResumeClick()
+              }}
             >
-              Resmue
-            </Nav.Link>
+              <Nav.Link href='#resume' className='navbar-link'>
+                Resume
+              </Nav.Link>
+            </Link>
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
