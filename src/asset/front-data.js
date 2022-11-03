@@ -1,5 +1,6 @@
 import bankld from '../asset/img/b.svg'
 import food from '../asset/img/food.svg'
+import musica from '../asset/img/musica.png'
 
 const data = [
   {
@@ -15,6 +16,13 @@ const data = [
     imgUrl: food,
     live: 'https://fooood-app.netlify.app/',
     source: 'https://github.com/deen257/Food-app',
+  },
+  {
+    title: 'Music Player',
+    description: 'Design',
+    imgUrl: musica,
+    live: 'https://musica-afj.netlify.app/',
+    source: 'https://github.com/deen257/musica.git',
   },
 ]
 

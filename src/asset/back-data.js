@@ -1,5 +1,6 @@
 import projImg2 from '../asset/img/project-img2.png'
 import food from '../asset/img/food.svg'
+import musica from '../asset/img/musica.png'
 
 const data = [
   {
@@ -15,6 +16,13 @@ const data = [
     imgUrl: projImg2,
     live: 'https://github.com/deen257',
     source: 'https://github.com/deen257',
+  },
+  {
+    title: 'Music Player',
+    description: 'Design & API',
+    imgUrl: musica,
+    live: 'https://musica-afj.netlify.app/',
+    source: 'https://github.com/deen257/musica.git',
   },
 ]
 export default data
