@@ -1,6 +1,7 @@
 import projImg2 from '../asset/img/project-img2.png'
 import food from '../asset/img/food.svg'
 import musica from '../asset/img/musica.png'
+import privat from '../asset/img/private.png'
 
 const data = [
   {
@@ -23,6 +24,12 @@ const data = [
     imgUrl: musica,
     live: 'https://musica-afj.netlify.app/',
     source: 'https://github.com/deen257/musica.git',
+  },
+  {
+    title: 'Private Blockchain',
+    description: 'A simple private blockchain using LevelDB and CryptoJS',
+    imgUrl: privat,
+    source: 'https://github.com/deen257/Private-blockchain',
   },
 ]
 export default data
